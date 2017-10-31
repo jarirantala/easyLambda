@@ -1,0 +1,13 @@
+service: serverless
+provider:
+  name: aws
+  runtime: python3.6
+  profile: jari
+functions:
+  munEkaLambda:
+    handler: munEkaLambda.handler
+    events:
+      - http: GET kutsuMua
+resources:
+  Resources: {}
+  Outputs: {}
