@@ -6,6 +6,10 @@
 - Create access key IAM -> Users -> *käyttäjänimi* -> Security credentials
     - Add keys to ~/.aws/credentials (http://docs.aws.amazon.com/cli/latest/userguide/cli-config-files.html)
 
+*[jari] <-- SEE PROFILE IN SERVERLESS.yml
+aws_access_key_id = ACCESS_KEY
+aws_secret_access_key = SECRET_ACCESS_KEY*
+
 ## Serverless Framework
 
 Usage:
