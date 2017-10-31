@@ -1,8 +1,9 @@
-service: serverless
+service: munEkaLambda
 provider:
   name: aws
   runtime: python3.6
   profile: jari
+  region: eu-central-1
 functions:
   munEkaLambda:
     handler: munEkaLambda.handler
