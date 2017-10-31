@@ -7,7 +7,7 @@
     - Add keys to ~/.aws/credentials (http://docs.aws.amazon.com/cli/latest/userguide/cli-config-files.html)
 
 Same profile in serverless.yml:
-```$\lbrack jari \rbrack$
+```\lbrack jari\rbrack
 aws_access_key_id = ACCESS_KEY
 aws_secret_access_key = SECRET_ACCESS_KEY
 ```
