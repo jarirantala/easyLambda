@@ -1,4 +1,4 @@
-service: munEkaLambda
+service: pythonApi
 provider:
   name: aws
   runtime: python3.6
@@ -6,9 +6,9 @@ provider:
   region: eu-central-1
 functions:
   munEkaLambda:
-    handler: munEkaLambda.handler
+    handler: apiEndpoint.handler
     events:
-      - http: GET kutsuMua
+      - http: GET endpoint
 resources:
   Resources: {}
   Outputs: {}

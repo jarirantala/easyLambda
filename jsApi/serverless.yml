@@ -1,0 +1,14 @@
+service: apiEndpoint
+provider:
+  name: aws
+  runtime: nodejs6.10
+  profile: jari
+  region: eu-central-1
+functions:
+  apiEndpoint:
+    handler: apiEndpoint.handler
+    events:
+      - http: GET endpoint
+resources:
+  Resources: {}
+  Outputs: {}
