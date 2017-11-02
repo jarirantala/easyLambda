@@ -24,5 +24,6 @@ aws_secret_access_key = SECRET_ACCESS_KEY
 Usage:
 - *npm install -g serverless* (https://www.npmjs.com/get-npm)
 - *serverless deploy* to deploy the application
+- *serverless remove* if things went south
 
 https://serverless.com
