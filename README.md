@@ -24,7 +24,8 @@ aws_secret_access_key = SECRET_ACCESS_KEY
 *The Serverless Framework is a CLI tool that allows users to build & deploy auto-scaling, pay-per-execution, event-driven functions.*
 
 Usage:
-- *npm install -g serverless* (https://www.npmjs.com/get-npm)
+- *npm install -g serverless* (
+    - If you don't have npm installed: https://www.npmjs.com/get-npm
 - *serverless deploy* to deploy the application
 - *serverless remove* if things went south
 
