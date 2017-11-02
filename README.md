@@ -6,7 +6,7 @@ Lambda rest endpoint examples to get you up and running easy and fast. Both pyth
 
 - Create an account http://docs.aws.amazon.com/lambda/latest/dg/setting-up.html
 - Create access key IAM -> Users -> *username* -> Security credentials
-    - Add keys to ~/.aws/credentials (http://docs.aws.amazon.com/cli/latest/userguide/cli-config-files.html)
+    - Add keys to ~/.aws/credentials or C:\Users\USERNAME \.aws\credentials (http://docs.aws.amazon.com/cli/latest/userguide/cli-config-files.html)
 
 
 ```
