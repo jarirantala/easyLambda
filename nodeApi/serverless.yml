@@ -2,8 +2,8 @@ service: apiEndpoint
 provider:
   name: aws
   runtime: nodejs6.10
-  profile: jari
-  region: eu-central-1
+  profile: potentiaali
+  region: eu-west-2
 functions:
   apiEndpoint:
     handler: apiEndpoint.handler

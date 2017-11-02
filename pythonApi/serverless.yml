@@ -2,10 +2,10 @@ service: pythonApi
 provider:
   name: aws
   runtime: python3.6
-  profile: jari
-  region: eu-central-1
+  profile: potentiaali
+  region: eu-west-2
 functions:
-  munEkaLambda:
+  apiEndpoint:
     handler: apiEndpoint.handler
     events:
       - http: GET endpoint
