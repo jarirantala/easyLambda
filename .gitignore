@@ -23,8 +23,7 @@ Thumbs.db
 
 *.ppt*
 *.txt
-humidori.yaml
+*.csv
 node_modules/
-morris.js-0.5.1/
 .serverless/
 .git
