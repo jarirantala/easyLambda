@@ -5,6 +5,8 @@ Lambda rest endpoint examples to get you up and running easy and fast. Both pyth
 ## AWS account
 
 - Create an account http://docs.aws.amazon.com/lambda/latest/dg/setting-up.html
+    - You need a credit card
+    - But usage is free for small scale use
 - Create access key IAM -> Users -> *username* -> Security credentials
     - Add keys to ~/.aws/credentials or C:\Users\USERNAME \ .aws\credentials (http://docs.aws.amazon.com/cli/latest/userguide/cli-config-files.html)
     - OR install serverless (see below) AND
