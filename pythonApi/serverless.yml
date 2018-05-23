@@ -2,7 +2,7 @@ service: pythonApi
 provider:
   name: aws
   runtime: python3.6
-  profile: potentiaali
+  profile: YOUR_PROFILE_NAME
   region: eu-west-2
 functions:
   apiEndpoint:
