@@ -2,7 +2,7 @@ service: apiEndpoint
 provider:
   name: aws
   runtime: nodejs6.10
-  profile: potentiaali
+  profile: YOUR_PROFILE_NAME
   region: eu-west-2
 functions:
   apiEndpoint:
