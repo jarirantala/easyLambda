@@ -1,0 +1,35 @@
+service: pipelineByJari
+provider:
+  name: aws
+  runtime: python3.6
+  profile: serverless2019
+  region: eu-west-2
+  environment:
+    DYNAMODB_TABLE: jariTable
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:GetItem
+        - dynamodb:PutItem
+      Resource: "arn:aws:dynamodb:${opt:region, self:provider.region}:*:table/${self:provider.environment.DYNAMODB_TABLE}"
+functions:
+  saveMessage:
+    handler: apiEndpoint.handler
+    events:
+      - http: GET saveMessage
+resources:
+  Resources:
+    myTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: ${self:provider.environment.DYNAMODB_TABLE}
+        AttributeDefinitions:
+          - AttributeName: message
+            AttributeType: S
+        KeySchema:
+          - AttributeName: message
+            KeyType: HASH
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+  Outputs: {}
